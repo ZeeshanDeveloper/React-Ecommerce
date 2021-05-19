@@ -1,0 +1,39 @@
+.navbar{
+  background-color: #191919;
+  overflow: hidden;
+  text-align: center;
+}
+.navbar ul{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.navbar ul li{
+  display: block;
+}
+.navbar ul li a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 15px;
+  padding: 20px 43px;
+  position: relative;
+}
+.navbar ul li a::after{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background: rgb(255 255 255 / 23%);
+  right: -1px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+}
+.navbar ul li:last-child a::after{
+  width: 0px;
+}
